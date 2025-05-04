@@ -1,11 +1,10 @@
+import Part from "./Part";
 const Content = (prop) => {
   return (
     <>
-      {prop.Content.map((item, index) => (
-        <p key={index}>
-          {item.part} {item.exercise}
-        </p>
-      ))}
+      <Part Content={prop.Content[0]} />
+      <Part Content={prop.Content[1]} />
+      <Part Content={prop.Content[2]} />
     </>
   );
 };
